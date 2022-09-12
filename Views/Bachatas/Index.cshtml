@@ -1,0 +1,46 @@
+@model IEnumerable<Spotify.Models.Bachata>
+
+<div class="container" id="buscador">
+    <div class="row">
+        <div class="col-md">
+            <form method="POST" action="/Bachatas/search" class="d-flex" role="search">
+                <input name="buscar" id="textBox" class="form-control me-2" type="search" placeholder="Escribe una cancion" aria-label="Search">
+                <button class="btn btn-outline-success" id="button_buscar" type="submit">Buscar</button>
+                <a asp-action="Create" class="btn btn-outline-success" type="button" id="button_buscar">Agregar</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="ordenar">
+    Ordenar por: 
+    <a id="button_ord" href="/Bachatas/filtrado/1" type="button">Cancion A - Z</a>
+    <a id="button_ord" href="/Bachatas/filtrado/2" type="button">Artista A - Z</a>
+</div>
+
+@if (Model==null)
+{
+    <div class="card" id="vacio">
+        <div class="card-body">
+            <h3>No se encontraron resultados</h3>
+        </div>
+    </div>
+} else{
+    @foreach (var item in Model)
+    {
+        <div class="card" id="box_album" >
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="@item.imgPrincipal" alt="@Html.DisplayFor(modelItem => item.cancion)">
+                        <span>
+                            <h3>@Html.DisplayFor(modelItem => item.cancion)</h3>
+                            <h5><small>@Html.DisplayFor(modelItem => item.artista)</small></h5>
+                        </span>
+                        <a href="/Bachatas/Details/@Html.DisplayFor(modelItem => item.id)" type="button" id="play"><img src="https://i.imgur.com/aKwCuLb.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}

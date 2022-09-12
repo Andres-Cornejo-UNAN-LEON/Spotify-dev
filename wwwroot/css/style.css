@@ -1,0 +1,424 @@
+body {
+  background-color: #11191f;
+  color: #525666;
+}
+
+.clear_fix {
+  float: none;
+  clear: both;
+}
+
+#descripcion div span, #descripcion div div, #box_album {
+  display: block;
+  float: left;
+}
+
+@keyframes btn_play {
+  0% {
+    margin: 20px auto;
+  }
+  100% {
+    margin: 0px auto;
+  }
+}
+@keyframes expandir {
+  0% {
+    width: 50%;
+    height: 200px;
+    border: solid 1px #525666;
+    border-radius: 10px;
+  }
+  100% {
+    width: 100%;
+    height: 320px;
+    border: solid 1px #1ed760;
+  }
+}
+@keyframes color_h1 {
+  0% {
+    text-align: center;
+    line-height: 150px;
+  }
+  100% {
+    color: #1ed760;
+  }
+}
+@keyframes change_h5 {
+  0% {
+    width: 70%;
+    margin: 0px;
+    text-align: left;
+  }
+  90% {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes change_button {
+  0% {
+    visibility: hidden;
+    text-decoration: none;
+  }
+  100% {
+    visibility: visible;
+    margin: 15px 50px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: solid 1px #1ed760;
+    float: right;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+}
+#encabezado {
+  height: 80px;
+  color: #525666;
+  background-color: black;
+  margin-bottom: 3%;
+  text-align: left;
+  line-height: 80px;
+}
+#encabezado img {
+  width: 150px;
+  float: left;
+  line-height: 80px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+#encabezado strong {
+  margin-left: 10px;
+}
+#encabezado strong a {
+  text-decoration: none;
+  color: #525666;
+}
+
+#vacio {
+  width: 60%;
+  height: 150px;
+  background-color: #11191f;
+  margin: 10% auto;
+  box-shadow: 1px -3px 63px -6px #a71c1c;
+  -webkit-box-shadow: 1px -3px 63px -6px #a71c1c;
+  -moz-box-shadow: 1px -3px 63px -6px #a71c1c;
+  border: solid 1px #a71c1c;
+  border-radius: 10px;
+}
+#vacio div h3 {
+  text-align: center;
+  color: #525666;
+  margin: 5% 0px;
+}
+
+#box_album:hover {
+  background-color: #11191f;
+  color: #1ed760;
+  border: solid 1px #1ed760;
+  box-shadow: 1px -3px 63px -6px #1ed760;
+  -webkit-box-shadow: 1px -3px 63px -6px #1ed760;
+  -moz-box-shadow: 1px -3px 63px -6px #1ed760;
+}
+#box_album:hover div div #play {
+  display: block;
+  animation-name: btn_play;
+  animation-duration: 1000ms;
+}
+
+#box_album {
+  width: 20%;
+  height: 400px;
+  background-color: #11191f;
+  margin: 3% 6%;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  border: solid 1px white;
+}
+#box_album div div img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+#box_album div div #play {
+  width: 80px;
+  height: 80px;
+  background-color: #1ed760;
+  margin: 0px auto;
+  display: none;
+  border-radius: 100%;
+}
+#box_album div div #play img {
+  width: 30px;
+  text-align: center;
+  margin: 22px 30px;
+}
+
+#ordenar {
+  width: 40%;
+  margin: 2% auto 5% auto;
+}
+#ordenar #button_ord {
+  margin: 0px 10px;
+  padding: 5px 20px;
+  color: white;
+  text-decoration: none;
+  border: solid 1px white;
+  border-radius: 100px;
+}
+#ordenar #button_ord:hover {
+  border: solid 1px #1ed760;
+  color: #1ed760;
+}
+
+#buscador {
+  width: 70%;
+  margin: 10px auto 25px auto;
+}
+#buscador #textBox {
+  background-color: #11191f;
+  color: white;
+  border-radius: 60px;
+}
+#buscador #textBox:focus {
+  border: solid 1px #1ed760;
+  box-shadow: 1px -3px 63px -6px #1ed760;
+  -webkit-box-shadow: 1px -3px 63px -6px #1ed760;
+  -moz-box-shadow: 1px -3px 63px -6px #1ed760;
+}
+#buscador #button_buscar {
+  margin: 0px 10px;
+  width: 230px;
+  border-radius: 60px;
+}
+#buscador #button_buscar:hover {
+  box-shadow: 1px -3px 63px -6px #1ed760;
+  -webkit-box-shadow: 1px -3px 63px -6px #1ed760;
+  -moz-box-shadow: 1px -3px 63px -6px #1ed760;
+}
+
+#descripcion div div {
+  width: 30%;
+}
+#descripcion div div img {
+  width: 70%;
+  margin-left: 10%;
+}
+#descripcion div span {
+  width: 60%;
+  margin: 0px 5%;
+}
+#descripcion div #contenido #spotify {
+  width: 80px;
+  height: 80px;
+  background-color: #1ed760;
+  margin: 10px 30px;
+  border-radius: 100%;
+}
+#descripcion div #contenido #spotify img {
+  width: 30px;
+  text-align: center;
+  margin: 22px 30px;
+}
+#descripcion div #contenido #spotify-stop, #descripcion div #contenido #spotify-pause {
+  width: 60px;
+  height: 60px;
+  background-color: #1ed760;
+  margin: 20px 0px 0px 0px;
+  border-radius: 100%;
+}
+#descripcion div #contenido #spotify-stop img, #descripcion div #contenido #spotify-pause img {
+  width: 20px;
+  text-align: center;
+  margin: 20px 0px 20px 20px;
+}
+#descripcion div #contenido #spotify:hover, #descripcion div #contenido #spotify-stop:hover {
+  box-shadow: 1px -3px 63px -6px #1ed760;
+  -webkit-box-shadow: 1px -3px 63px -6px #1ed760;
+  -moz-box-shadow: 1px -3px 63px -6px #1ed760;
+}
+
+#titulo_create {
+  color: #525666;
+  text-align: center;
+}
+
+#formulario-datos {
+  width: 40%;
+  margin: 5% auto;
+}
+#formulario-datos .datos label {
+  color: #525666;
+  margin: 10px auto;
+}
+#formulario-datos .datos input {
+  background-color: #11191f;
+  color: #525666;
+}
+#formulario-datos .datos input:hover, #formulario-datos .datos input:focus {
+  box-shadow: 1px -3px 63px -6px #1ed760;
+  -webkit-box-shadow: 1px -3px 63px -6px #1ed760;
+  -moz-box-shadow: 1px -3px 63px -6px #1ed760;
+  border: solid 1px #1ed760;
+}
+#formulario-datos #button_accion {
+  width: 100%;
+  background-color: #11191f;
+  color: #1ed760;
+  border: solid 1px #1ed760;
+  height: 50px;
+  margin: 10px auto;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#formulario-datos #button_accion:hover {
+  background-color: #1ed760;
+  color: #525666;
+  box-shadow: 1px -3px 63px -6px #1ed760;
+  -webkit-box-shadow: 1px -3px 63px -6px #1ed760;
+  -moz-box-shadow: 1px -3px 63px -6px #1ed760;
+}
+
+#button_back a {
+  color: #a71c1c;
+  background-color: #11191f;
+  border: solid 1px #a71c1c;
+  font-weight: bold;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#button_back a:hover {
+  color: #11191f;
+  background-color: #a71c1c;
+  border: solid 1px #a71c1c;
+}
+
+#Message {
+  width: 29%;
+  margin: 20% auto;
+}
+#Message h4 {
+  text-align: center;
+  color: #525666;
+}
+#Message form #button_Delete {
+  color: #1ed760;
+  background-color: #11191f;
+  border: solid 1px #1ed760;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 5px 80px;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#Message form #button_back_del {
+  color: #a71c1c;
+  background-color: #11191f;
+  border: solid 1px #a71c1c;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 9px 80px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#Message form #button_Delete:hover {
+  color: #11191f;
+  background-color: #1ed760;
+  border: solid 1px #1ed760;
+}
+#Message form #button_back_del:hover {
+  color: #11191f;
+  background-color: #a71c1c;
+  border: solid 1px #a71c1c;
+}
+
+#genero {
+  width: 50%;
+  height: 190px;
+  border: solid 1px #525666;
+  border-radius: 10px;
+  margin: 5% 0px;
+}
+#genero img {
+  width: 20%;
+  margin: 30px;
+  display: block;
+  float: left;
+}
+#genero h1 {
+  text-align: center;
+  line-height: 150px;
+}
+#genero h5 {
+  visibility: hidden;
+}
+#genero #button_View {
+  visibility: hidden;
+  color: #1ed760;
+}
+
+#genero:hover {
+  animation-name: expandir;
+  animation-duration: 1200ms;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+}
+#genero:hover img {
+  width: 20%;
+}
+#genero:hover h1 {
+  animation-name: color_h1;
+  animation-duration: 800ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+}
+#genero:hover h5 {
+  animation-name: change_h5;
+  animation-duration: 700ms;
+  animation-delay: 800ms;
+  animation-fill-mode: forwards;
+}
+#genero:hover #button_View {
+  animation-name: change_button;
+  animation-duration: 300ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
+}
+#genero:hover #button_View:hover {
+  background-color: #1ed760;
+  color: #11191f;
+}
+
+/*
+#genero:hover{
+    width: 100%;
+    height: 320px;
+    border: solid 1px $color-spotify;
+    h1{
+        color: $color-spotify;
+    }
+    h5{
+        display: block;
+    }
+    #button_View{
+        display: block;
+        text-decoration: none;
+        color: $color-spotify;
+        padding: 10px 30px;
+        border: solid 1px $color-spotify;
+        float: right;
+        margin: 30px 50px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    #button_View:hover{
+        background-color: $color-spotify;
+        color: $color-principal;
+    }
+}*/
+
+/*# sourceMappingURL=style.css.map */

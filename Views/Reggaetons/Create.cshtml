@@ -1,0 +1,40 @@
+@model Spotify.Models.Reggaeton
+
+<h3 id="titulo_create">Registro de canci&oacute;n de reggaeton</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <form asp-action="Create" id="formulario-datos">
+                <div class="mb-3 datos">
+                    <label class="form-label">Nombre de la canci&oacute;n</label>
+                    <input type="text" class="form-control" asp-for="cancion" placeholder="Ingrese el nombre de la cancion">
+                </div>
+                <div class="mb-3 datos">
+                    <label class="form-label">Nombre del artista</label>
+                    <input type="text" class="form-control" asp-for="artista" placeholder="Ingrese el nombre del artista">
+                </div>
+                <div class="mb-3 datos">
+                    <label class="form-label">Ingrese año de lanzamiento</label>
+                    <input type="text" class="form-control" asp-for="lanzamiento" placeholder="Ingrese el año de lanzamiento">
+                </div>
+                <div class="mb-3 datos">
+                    <label class="form-label">Ingrese la foto</label>
+                    <input type="text" class="form-control" asp-for="imgPrincipal" placeholder="Ingrese la url de la imagen">
+                </div>
+                <div class="mb-3 datos">
+                    <label class="form-label">Ingrese la url de la cancion</label>
+                    <input type="text" class="form-control" asp-for="Spotify" placeholder="Ingrese la url de la cancion">
+                </div>
+                <div class="mb-3 datos">
+                    <label class="form-label">Ingrese el color principal</label>
+                    <input type="text" class="form-control" asp-for="color" placeholder="Ingrese el hexadecimal del color">
+                </div>
+                <input id="button_accion" type="submit" value="Generar ingreso" class="btn" />
+            </form>
+        </div>
+    </div>
+</div>
+<div id="button_back">
+    <a asp-action="Index">Regresar</a>
+</div>

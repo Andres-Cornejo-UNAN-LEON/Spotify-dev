@@ -1,0 +1,9 @@
+@model Spotify.Models.Salsa
+<div id="Message">
+    <h4>Desea eliminar los datos?</h4>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <input type="submit" value="Si" class="btn btn-danger" id="button_Delete" /> |
+        <a id="button_back_del" asp-action="Index">No</a>
+    </form>
+</div>

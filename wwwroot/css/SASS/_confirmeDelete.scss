@@ -1,0 +1,41 @@
+#Message{
+    width: 29%;
+    margin: 20% auto;
+    h4{
+        text-align: center;
+        color: $color-font;
+    }
+    form{
+        #button_Delete{
+            color: $color-spotify;
+            background-color: $color-principal;
+            border: solid 1px $color-spotify;
+            font-weight: bold;
+            margin: 20px auto;
+            padding: 5px 80px;
+            height: 40px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        #button_back_del{
+            color: $color-error;
+            background-color: $color-principal;
+            border: solid 1px $color-error;
+            font-weight: bold;
+            margin: 20px auto;
+            padding: 9px 80px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        #button_Delete:hover{
+            color: $color-principal;
+            background-color: $color-spotify;
+            border: solid 1px $color-spotify;
+        }
+        #button_back_del:hover{
+            color: $color-principal;
+            background-color: $color-error;
+            border: solid 1px $color-error;
+        }
+    }
+}

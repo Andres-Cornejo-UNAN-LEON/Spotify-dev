@@ -1,0 +1,96 @@
+//colores base del proyecto
+$color-principal: #11191f;
+$color-spotify: #1ed760;
+$color-secundario: #404447;
+$color-font: #525666;
+$color-error: #a71c1c;
+// Valor predeterminado del body
+body{
+    background-color: $color-principal;
+    color: $color-font;
+}
+//eliminar el salto de componentes
+.clear_fix{
+    float: none;
+    clear: both;
+}
+%caja-flotante{
+    display: block;
+    float: left;
+}
+//atributos generales de los componentes
+@mixin atributos-componentes($ancho, $alto, $color-fondo, $margenes){
+    width: $ancho;
+    height: $alto;
+    background-color: $color-fondo;
+    margin: $margenes;
+}
+//sombra para los componentes
+@mixin sombra($color-sombra){
+    box-shadow: 1px -3px 63px -6px $color-sombra;
+    -webkit-box-shadow: 1px -3px 63px -6px $color-sombra;
+    -moz-box-shadow: 1px -3px 63px -6px $color-sombra;
+}
+//creacion de la animacion de los botones de play
+@keyframes btn_play{
+    0% {
+        margin: 20px auto;
+    }
+    100%{
+        margin: 0px auto;
+    }
+}
+
+@keyframes expandir {
+    0%{
+        width: 50%;
+        height: 200px;
+        border: solid 1px $color-font;
+        border-radius: 10px;
+    }
+    100%{
+        width: 100%;
+        height: 320px;
+        border: solid 1px $color-spotify;
+    }
+}
+@keyframes color_h1 {
+    0%{
+        text-align: center;
+        line-height: 150px;
+    }
+    100%{
+        color: $color-spotify;
+    }
+}
+@keyframes change_h5 {
+    0%{
+        width: 70%;
+        margin: 0px;
+        text-align: left;
+    }
+    90%{
+        width: 80%;
+        margin: 0px auto;
+        text-align: center;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes change_button {
+    0%{
+        visibility: hidden;
+        text-decoration: none;
+    } 
+    100%{
+        visibility: visible;
+        margin: 15px 50px;
+        text-decoration: none;
+        padding: 10px 30px;
+        border: solid 1px $color-spotify;
+        float: right;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+}

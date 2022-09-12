@@ -1,0 +1,28 @@
+@model Spotify.Models.Salsa
+
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <div class="card" id="descripcion" style="background-color: @Model.color;">
+                <div class="card-body">
+                    <div>
+                        <img src="@Model.imgPrincipal" alt="@Model.cancion">
+                    </div>
+                    <span id="titulo">
+                        <h4><small>Cancion</small></h4>
+                        <h2>@Model.cancion</h2>
+                        <h4><small>@Model.artista</small></h4>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" id="buscador">
+        <a asp-action="Edit" asp-route-id="@Model?.id" class="btn btn-outline-success" type="button" id="button_buscar">Editar</a>
+        <a asp-action="Delete" asp-route-id="@Model?.id" class="btn btn-outline-success" type="button" id="button_buscar">Eliminar</a>
+        <a asp-action="Index" class="btn btn-outline-success" type="button" id="button_buscar">Regresar</a>
+    </div>
+</div>

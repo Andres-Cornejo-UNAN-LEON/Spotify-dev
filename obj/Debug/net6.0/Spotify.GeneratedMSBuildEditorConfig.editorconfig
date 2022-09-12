@@ -8,37 +8,101 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Spotify
 build_property.RootNamespace = Spotify
-build_property.ProjectDir = c:\Users\andre\OneDrive\Documents\II Semestre - 4to año\.Net v6\Nueva carpeta\Spotify\
+build_property.ProjectDir = C:\Users\andre\OneDrive\Documents\II Semestre - 4to año\.Net v6\Nueva carpeta\Spotify\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\andre\OneDrive\Documents\II Semestre - 4to año\.Net v6\Nueva carpeta\Spotify
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\andre\OneDrive\Documents\II Semestre - 4to año\.Net v6\Nueva carpeta\Spotify
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Home/Index.cshtml]
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Bachatas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjaGF0YXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Bachatas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjaGF0YXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Bachatas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjaGF0YXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Bachatas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjaGF0YXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Bachatas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjaGF0YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Home/Privacy.cshtml]
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Shared/Error.cshtml]
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Reggaetons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnZ2FldG9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Reggaetons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnZ2FldG9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Reggaetons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnZ2FldG9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Reggaetons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnZ2FldG9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Reggaetons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnZ2FldG9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Salsas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fsc2FzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Salsas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fsc2FzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Salsas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fsc2FzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Salsas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fsc2FzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Salsas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fsc2FzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Shared/_LayoutMain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/_ViewImports.cshtml]
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/_ViewStart.cshtml]
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Shared/_Layout.cshtml]
+[C:/Users/andre/OneDrive/Documents/II Semestre - 4to año/.Net v6/Nueva carpeta/Spotify/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ciwr53d3e7

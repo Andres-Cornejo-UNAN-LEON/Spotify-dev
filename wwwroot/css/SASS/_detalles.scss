@@ -1,0 +1,40 @@
+#descripcion{
+    div{
+        div{
+            @extend %caja-flotante;
+            width: 30%;
+            img{
+                width: 70%;
+                margin-left: 10%;
+            }
+        }
+        span{
+            @extend %caja-flotante;
+            width: 60%;
+            margin: 0px 5%;
+        }
+        #contenido{
+            #spotify{
+                @include atributos-componentes(80px, 80px, $color-spotify, 10px 30px);
+                border-radius: 100%;
+                img{
+                    width: 30px;
+                    text-align: center;
+                    margin: 22px 30px;
+                }
+            }
+            #spotify-stop, #spotify-pause{
+                @include atributos-componentes(60px, 60px, $color-spotify, 20px 0px 0px 0px);
+                border-radius: 100%;
+                img{
+                    width: 20px;
+                    text-align: center;
+                    margin: 20px 0px 20px 20px;
+                }
+            }
+            #spotify:hover, #spotify-stop:hover{
+                @include sombra($color-spotify)
+            }
+        }
+    }
+}

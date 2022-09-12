@@ -1,0 +1,33 @@
+@model Spotify.Models.Bachata
+
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <div class="card" id="descripcion" style="background-color: @Model.color;">
+                <div class="card-body">
+                    <div>
+                        <img src="@Model.imgPrincipal" alt="@Model.cancion">
+                    </div>
+                    <span id="titulo">
+                        <h4><small>Cancion</small></h4>
+                        <h2>@Model.cancion</h2>
+                        <h4><small>@Model.artista</small></h4>
+                        <h6><small>@Model.lanzamiento</small></h6>
+                    </span>
+                    <div id="contenido">
+                        <a type="button" id="spotify" onclick="reproductor('@Model.Spotify')"><img src="https://i.imgur.com/aKwCuLb.png" alt=""></a>
+                        <a type="button" id="spotify-stop"><img src="https://i.imgur.com/LPop9Tt.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" id="buscador">
+        <a asp-action="Edit" asp-route-id="@Model?.id" class="btn btn-outline-success" type="button" id="button_buscar">Editar</a>
+        <a asp-action="Delete" asp-route-id="@Model?.id" class="btn btn-outline-success" type="button" id="button_buscar">Eliminar</a>
+        <a asp-action="Index" class="btn btn-outline-success" type="button" id="button_buscar">Regresar</a>
+    </div>
+</div>

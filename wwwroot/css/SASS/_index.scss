@@ -1,0 +1,83 @@
+#genero{
+    width: 50%;
+    height: 190px;
+    border: solid 1px $color-font;
+    border-radius: 10px;
+    margin: 5% 0px;
+    img{
+        width: 20%;
+        margin: 30px;
+        display: block;
+        float: left;
+    }
+    h1{
+        text-align: center;
+        line-height: 150px;
+    }
+    h5{
+        visibility: hidden;
+    }
+    #button_View{
+        visibility: hidden;
+        color: $color-spotify;
+    }
+}
+
+#genero:hover{
+    animation-name: expandir;
+    animation-duration: 1200ms;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+    img{
+        width: 20%;
+    }
+    h1{
+        animation-name: color_h1;
+        animation-duration: 800ms;
+        animation-delay: 300ms;
+        animation-fill-mode: forwards;
+    }
+    h5{
+        animation-name: change_h5;
+        animation-duration: 700ms;
+        animation-delay:800ms;
+        animation-fill-mode: forwards;
+    }
+    #button_View{
+        animation-name: change_button;
+        animation-duration: 300ms;
+        animation-delay:1000ms;
+        animation-fill-mode: forwards;
+    }
+    #button_View:hover{
+        background-color: $color-spotify;
+        color: $color-principal
+    }
+}
+/*
+#genero:hover{
+    width: 100%;
+    height: 320px;
+    border: solid 1px $color-spotify;
+    h1{
+        color: $color-spotify;
+    }
+    h5{
+        display: block;
+    }
+    #button_View{
+        display: block;
+        text-decoration: none;
+        color: $color-spotify;
+        padding: 10px 30px;
+        border: solid 1px $color-spotify;
+        float: right;
+        margin: 30px 50px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    #button_View:hover{
+        background-color: $color-spotify;
+        color: $color-principal;
+    }
+}*/

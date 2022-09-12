@@ -1,0 +1,53 @@
+#titulo_create{
+    color: $color-font;
+    text-align: center;
+}
+#formulario-datos{
+    width: 40%;
+    margin: 5% auto;
+    .datos{
+        label{
+            color: $color-font;
+            margin: 10px auto;
+        }
+        input{
+            background-color: $color-principal;
+            color: $color-font;
+        }
+        input:hover, input:focus{
+            @include sombra($color-spotify);
+            border: solid 1px $color-spotify;
+        }
+    }
+    #button_accion{
+        width: 100%;
+        background-color: $color-principal;
+        color: $color-spotify;
+        border: solid 1px $color-spotify;
+        height: 50px;
+        margin: 10px auto;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #button_accion:hover{
+        background-color: $color-spotify;
+        color: $color-font;
+        @include sombra($color-spotify);
+    }
+}
+#button_back{
+    a{
+        color: $color-error;
+        background-color: $color-principal;
+        border: solid 1px $color-error;
+        font-weight: bold;
+        padding: 15px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+    a:hover{
+        color: $color-principal;
+        background-color: $color-error;
+        border: solid 1px $color-error;
+    }
+}
