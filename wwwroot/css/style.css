@@ -420,5 +420,105 @@ body {
         color: $color-principal;
     }
 }*/
+#tarjeta_comentarios {
+  background-color: #11191f;
+  border: solid 1px #404447;
+  width: 80%;
+  margin: 40px auto;
+  border-radius: 30px;
+  padding: 60px;
+}
+#tarjeta_comentarios .card-header {
+  background-color: #11191f;
+}
+#tarjeta_comentarios .card-header h3 {
+  text-align: center;
+  color: #1ed760;
+}
+#tarjeta_comentarios .card-body {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+#tarjeta_comentarios .card-body #boton_modal_editar {
+  background-color: #11191f;
+  border: none;
+  color: #404447;
+  padding: 10px 5px 12px 5px;
+}
+#tarjeta_comentarios .card-body #boton_modal_editar:active, #tarjeta_comentarios .card-body #boton_modal_editar:focus {
+  box-shadow: none;
+  border: none;
+}
+#tarjeta_comentarios .card-body #Modal_edit {
+  background-color: #11191f;
+}
+#tarjeta_comentarios .card-body #Modal_edit div {
+  background-color: #11191f;
+  border: none;
+}
+#tarjeta_comentarios .card-body #Modal_edit #boton_editar_comentario {
+  float: right;
+  margin: 0px auto;
+  width: 100px;
+}
+#tarjeta_comentarios .card-body #Modal_edit #textarea_editar {
+  width: 100%;
+  border-radius: 10px;
+  resize: none;
+  background-color: #11191f;
+  color: #525666;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+#tarjeta_comentarios .card-body a {
+  text-decoration: none;
+  color: #404447;
+  margin: 9px 5px;
+  padding: 10px 5px;
+}
+#tarjeta_comentarios .card-body h4 {
+  text-align: center;
+}
+#tarjeta_comentarios .card-body::-webkit-scrollbar {
+  width: 1em;
+}
+#tarjeta_comentarios .card-body::-webkit-scrollbar-thumb {
+  background-color: #525666;
+  outline: 1px solid #11191f;
+}
+#tarjeta_comentarios .card-footer {
+  background-color: #11191f;
+}
+#tarjeta_comentarios .card-footer form textarea {
+  border-radius: 10px;
+  width: 100%;
+  background-color: #11191f;
+  border: solid 1px #404447;
+  color: #525666;
+  padding: 20px;
+  resize: none;
+}
+#tarjeta_comentarios .card-footer form textarea::-webkit-scrollbar {
+  width: 0.7em;
+}
+#tarjeta_comentarios .card-footer form textarea::-webkit-scrollbar-thumb {
+  background-color: #525666;
+  outline: 1px solid #11191f;
+}
+#tarjeta_comentarios .card-footer form textarea::hover {
+  border: solid 1px #1ed760;
+}
+#tarjeta_comentarios .card-footer form button {
+  margin: 10px 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #525666;
+  outline: 1px solid #11191f;
+}
 
 /*# sourceMappingURL=style.css.map */

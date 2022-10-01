@@ -31,3 +31,51 @@
         <a asp-action="Index" class="btn btn-outline-success" type="button" id="button_buscar">Regresar</a>
     </div>
 </div>
+
+<div class="card" id="tarjeta_comentarios">
+    <div class="card-header">
+        <h3>Comentarios</h3>
+    </div>
+    <div class="card-body">
+        @if(Model.Comments.Count() == 0){
+            <hr><h4><small class="text-muted">No hay comentarios</small></h4><hr>
+        }else{
+            @foreach (var item in Model.Comments)
+            {
+                <h6><small class="text-muted">@item.fecha</small></h6>
+                <h5>@item.texto</h5>
+                <button type="button" id="boton_modal_editar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal_@item.id">
+                Editar
+                </button>
+                <a href="/Comentarios/eliminar/@item.id">Eliminar</a>      
+                <hr>
+                <div class="modal fade" id="exampleModal_@item.id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" id="Modal_edit">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Editar comentario</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form asp-controller="Comentarios" asp-action="actualizar" method="POST">
+                                <input type="hidden" name="id" value="@item.id">
+                                <input type="hidden" name="fecha" value="@item.fecha">
+                                <input type="hidden" name="ReggaetonId" value="@Model.id">
+                                <textarea name="texto" id="textarea_editar" cols="20" rows="5">@item.texto</textarea>
+                                <button type="submit" class="btn btn-outline-success" id="boton_editar_comentario">Actualizar</button>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="card-footer">
+        <form asp-controller="Comentarios" asp-action="ingresar" method="POST">
+            <input type="hidden" name="ReggaetonId" value="@Model.id">
+            <textarea name="texto" id="" cols="90" rows="5" required></textarea><br>
+            <button class="btn btn-outline-success" type="submit" id="button_buscar">Enviar comentario</button>
+        </form>
+    </div>
+</div>

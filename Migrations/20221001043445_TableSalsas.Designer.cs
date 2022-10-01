@@ -10,8 +10,8 @@ using Spotify.Models;
 namespace Spotify.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220910201527_CreateSalsaTable")]
-    partial class CreateSalsaTable
+    [Migration("20221001043445_TableSalsas")]
+    partial class TableSalsas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -47,6 +47,28 @@ namespace Spotify.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Bachatas");
+                });
+
+            modelBuilder.Entity("Spotify.Models.Comentario", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReggaetonId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("fecha")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("texto")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("ReggaetonId");
+
+                    b.ToTable("Comentarios");
                 });
 
             modelBuilder.Entity("Spotify.Models.Reggaeton", b =>
@@ -99,6 +121,22 @@ namespace Spotify.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Salsas");
+                });
+
+            modelBuilder.Entity("Spotify.Models.Comentario", b =>
+                {
+                    b.HasOne("Spotify.Models.Reggaeton", "Reggaeton")
+                        .WithMany("Comments")
+                        .HasForeignKey("ReggaetonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Reggaeton");
+                });
+
+            modelBuilder.Entity("Spotify.Models.Reggaeton", b =>
+                {
+                    b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618
         }

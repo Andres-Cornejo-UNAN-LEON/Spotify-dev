@@ -7,4 +7,5 @@ public class AppDbContext : DbContext {
     public DbSet<Reggaeton> Reggaetons { get; set; }
     public DbSet<Bachata> Bachatas { get; set; }
     public DbSet<Salsa> Salsas { get; set; }
+    public DbSet<Comentario> Comentarios {get; set;}
 }

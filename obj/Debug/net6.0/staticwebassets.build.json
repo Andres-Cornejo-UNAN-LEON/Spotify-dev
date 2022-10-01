@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7hYlvwjhJ5y0rPA53lcOIqy3FS0M45htl1DT0zKRK28=",
+  "Hash": "WSFn9t38ZwWW1DHSh+gPYOg6QLqGG6k0wG3msRsCNnk=",
   "Source": "Spotify",
   "BasePath": "_content/Spotify",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\andre\\OneDrive\\Documents\\II Semestre - 4to año\\.Net v6\\Nueva carpeta\\Spotify\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Spotify.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\andre\\OneDrive\\Documents\\II Semestre - 4to año\\.Net v6\\Nueva carpeta\\Spotify\\wwwroot\\css\\SASS\\_componenteComentarios.scss",
+      "SourceId": "Spotify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andre\\OneDrive\\Documents\\II Semestre - 4to año\\.Net v6\\Nueva carpeta\\Spotify\\wwwroot\\",
+      "BasePath": "_content/Spotify",
+      "RelativePath": "css/SASS/_componenteComentarios.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\SASS\\_componenteComentarios.scss"
     },
     {
       "Identity": "C:\\Users\\andre\\OneDrive\\Documents\\II Semestre - 4to año\\.Net v6\\Nueva carpeta\\Spotify\\wwwroot\\css\\SASS\\_confirmeDelete.scss",

@@ -1,0 +1,102 @@
+#tarjeta_comentarios{
+    background-color: $color-principal;
+    border: solid 1px $color-secundario;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 30px;
+    padding: 60px;
+    .card-header{
+        background-color: $color-principal;
+        h3{
+            text-align: center;
+            color: $color-spotify;
+        }
+    }
+    .card-body{
+        #boton_modal_editar{
+            background-color: $color-principal;
+            border: none;
+            color: $color-secundario;
+            padding: 10px 5px 12px 5px;
+        }
+        #boton_modal_editar:active, #boton_modal_editar:focus{
+            box-shadow: none;
+            border: none;
+        }
+        #Modal_edit{
+            background-color: $color-principal;
+            div{
+                background-color: $color-principal;
+                border: none;
+            }
+            #boton_editar_comentario{
+                float: right;
+                margin: 0px auto;
+                width: 100px;
+            }
+            #textarea_editar{
+                width: 100%;
+                border-radius: 10px;
+                resize: none;
+                background-color: $color-principal;
+                color: $color-font;
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $color-secundario;
+            margin: 9px 5px;
+            padding: 10px 5px;
+        }
+        h4{
+            text-align: center;
+        }
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .card-body::-webkit-scrollbar {
+        width: 1em;
+    }
+     
+    .card-body::-webkit-scrollbar-thumb {
+      background-color: $color-font;
+      outline: 1px solid $color-principal;
+    }
+    .card-footer{
+        background-color: $color-principal;
+        form{
+            textarea{
+                border-radius: 10px;
+                width: 100%;
+                background-color: $color-principal;
+                border: solid 1px $color-secundario;
+                color: $color-font;
+                padding: 20px;
+                resize: none;
+            }
+            textarea::-webkit-scrollbar{
+                width: 0.7em;
+            }
+            textarea::-webkit-scrollbar-thumb {
+                background-color: $color-font;
+                outline: 1px solid $color-principal;
+            }
+            textarea::hover{
+                border: solid 1px $color-spotify;
+            }
+            button{
+                margin: 10px 0px;
+            }
+        }
+    }
+}
+
+body::-webkit-scrollbar{
+    width: 1em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $color-font;
+  outline: 1px solid $color-principal;
+}

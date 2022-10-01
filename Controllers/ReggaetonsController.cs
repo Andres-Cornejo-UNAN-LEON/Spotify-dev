@@ -62,7 +62,7 @@ namespace Spotify.Controllers
             }
 
             var reggaeton = await _context.Reggaetons
-                .FirstOrDefaultAsync(m => m.id == id);
+                .Where(m => m.id == id).Include(m=>m.Comments).FirstAsync();
             if (reggaeton == null)
             {
                 return NotFound();

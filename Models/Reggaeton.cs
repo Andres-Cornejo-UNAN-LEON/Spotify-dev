@@ -7,4 +7,8 @@ public class Reggaeton{
     public string? imgPrincipal{ get; set;}
     public string? Spotify{ get; set;}
     public string? color{ get; set;}
+    public List<Comentario> Comments {get; set;}
+    public Reggaeton(){
+        Comments = new List<Comentario>();
+    }
 }
